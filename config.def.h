@@ -1,4 +1,4 @@
-/* user and group to drop privileges to */
+/* user and group to drop privileges to - for some distros you may need to change nogroup to nobody */
 static const char *user  = "nobody";
 static const char *group = "nogroup";
 
@@ -23,13 +23,13 @@ ResourcePref resources[] = {
 static const int failonclear = 1;
 
 /* Background image path, should be available to the user above */
-static const char* background_image = "";
+static const char* background_image = "/usr/local/share/wallpaper/screen-lock.png";
 
 /* time in seconds to cancel lock with mouse movement */
 static const int timetocancel = 4;
 
 /* default message */
-static const char * message = "Suckless: Software that sucks less.";
+static const char * message = "Take a break.";
 
 /* text color */
 static const char * text_color = "#ffffff";
